@@ -13,6 +13,12 @@ if($url == '/') {
 if(preg_match('#page/new_user#', $url, $match)){
 	$page = include 'view/pages/new_user.php';
 }
+if(preg_match('#page/all_user#', $url, $match)){
+	$page = include 'view/pages/all_users.php';
+}
+if(preg_match('#page/user#', $url, $match)){
+	$page = include 'view/pages/user.php';
+}
 
 if(!isset($page)) {
 	$page = include 'view/pages/404.php';
