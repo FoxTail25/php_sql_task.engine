@@ -6,7 +6,7 @@ $content = '<h4>Список пользователей</h4>';
 foreach($data as $elem) {
 	$content .= "
 	<div>
-		<a href=\"/page/user.php?id=$elem[id]\">$elem[name]</a>
+		<a href=\"/user/user.php?id=$elem[id]\">$elem[name]</a>
 	</div>
 	";
 }

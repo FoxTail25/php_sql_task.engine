@@ -10,13 +10,13 @@ $layout = str_replace('{{ footer in  layout }}', $footer, $layout);
 if($url == '/') {
 	$page = include 'view/pages/home.php';
 }
-if(preg_match('#page/new_user#', $url, $match)){
+if(preg_match('#user/new_user#', $url, $match)){
 	$page = include 'view/pages/new_user.php';
 }
-if(preg_match('#page/all_user#', $url, $match)){
+if(preg_match('#user/all_user#', $url, $match)){
 	$page = include 'view/pages/all_users.php';
 }
-if(preg_match('#page/user#', $url, $match)){
+if(preg_match('#user/user#', $url, $match)){
 	$page = include 'view/pages/user.php';
 }
 
