@@ -15,7 +15,7 @@ if(!empty($_POST['userName']) and !empty($_POST['userSurName']) and !empty($_POS
 
 } else {
 
-	$query = "SELECT * FROM pages WHERE slug = 'new_user'";
+	$query = "SELECT * FROM pages WHERE slug = '$params[slug]'";
 	$page = mysqli_fetch_assoc(mysqli_query($site_base_link, $query));
 	return $page;
 }
