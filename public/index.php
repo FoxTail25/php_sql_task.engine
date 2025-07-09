@@ -16,7 +16,7 @@ if(preg_match('#user/(?<slug>new_user)#', $url, $params)){
 if(preg_match('#user/all_user#', $url, $match)){
 	$page = include 'view/pages/all_users.php';
 }
-if(preg_match('#user/(?<slug>user.)#', $url, $params)){
+if(preg_match('#user/(?<slug>user.+)#', $url, $params)){
 	$page = include 'view/pages/user.php';
 }
 
